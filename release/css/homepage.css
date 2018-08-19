@@ -63,16 +63,24 @@ a:active {
     background-repeat: no-repeat;
 }
 
-.header-login a.login {
+.header-button-container {
+    display: flex;
+
+}
+
+.header-login a.login,
+.header-information a.information {
     color: #3FC380;
 }
 
-.header-login a.login:hover {
+.header-login a.login:hover,
+.header-information a.information:hover {
     color: #fff;
     background-color: #3FC380;
 }
 
-.header-login a {
+.header-login a,
+.header-information a {
     display: block;
     height: 32px;
     line-height: 32px;
@@ -81,6 +89,10 @@ a:active {
     border: 1px solid #3FC380;
     text-align: center;
     border-radius: 5px;
+}
+
+.header-login a {
+    margin: 0 0 0 20px;
 }
 
 .index-pages {
@@ -272,8 +284,17 @@ a:active {
 .hide {
     display: none !important;
 }
+
 .scale-mini {
     height: 270px;
+}
+
+.copyright .record {
+    color: rgba(255, 255, 255, .5);
+}
+
+.copyright .record:hover {
+    text-decoration: underline;
 }
 
 @media all and (max-width: 1024px) {
@@ -302,7 +323,7 @@ a:active {
         width: 178px;
     }
     .header .logo {
-      /* float: left; */
-      margin-top: 13px;
+        /* float: left; */
+        margin-top: 13px;
     }
 }
